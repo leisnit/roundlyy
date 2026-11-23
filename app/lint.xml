@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Compose BOM 2026.11+ requires compileSdk 37.1; stay on 2026.09.00 until that SDK is installed. -->
+    <issue id="GradleDependency">
+        <ignore regexp="compose-bom" />
+    </issue>
+</lint>

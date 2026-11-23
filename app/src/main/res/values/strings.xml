@@ -1,0 +1,260 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Roundly</string>
+
+    <!-- Notification channels -->
+    <string name="channel_alarms_name">Alarms</string>
+    <string name="channel_alarms_description">Interval alerts and the full-screen alarm screen.</string>
+    <string name="channel_missed_name">Missed alerts</string>
+    <string name="channel_missed_description">Alerts that rang out without a response.</string>
+    <string name="channel_status_name">Status</string>
+    <string name="channel_status_description">Quiet updates, such as an alarm finishing its run.</string>
+
+    <!-- Common -->
+    <string name="action_done">Done</string>
+    <string name="action_snooze_minutes">Snooze %1$d min</string>
+
+    <!-- Alerts -->
+    <string name="alert_default_label">Alert</string>
+    <string name="alert_test_label">Test alert</string>
+    <string name="alert_due_at">Due at %1$s</string>
+    <string name="alert_snoozed_from">Snoozed from %1$s</string>
+    <string name="alert_step_progress">Step %1$d of %2$d · alert %3$d of %4$d</string>
+    <string name="alert_step_progress_continuing">Step %1$d of %2$d · alert %3$d, continuing</string>
+    <string name="alert_on_watch">Ringing on your watch</string>
+    <string name="missed_title">Missed: %1$s at %2$s</string>
+    <string name="missed_text">The schedule is still running.</string>
+    <string name="finished_title">Finished: %1$s</string>
+    <string name="finished_run_for">The run-for limit was reached. The alarm is now off.</string>
+    <string name="finished_completed">All steps are done. The alarm is now off.</string>
+    <string name="ringing_service_idle">Preparing alert</string>
+    <plurals name="alert_waiting">
+        <item quantity="one">%d more alert waiting</item>
+        <item quantity="other">%d more alerts waiting</item>
+    </plurals>
+
+    <!-- Actions -->
+    <string name="action_allow">Allow</string>
+    <string name="action_allow_notifications">Allow notifications</string>
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_choose_file">Choose file</string>
+    <string name="action_close">Close</string>
+    <string name="action_create_alarm">Create an alarm</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_duplicate">Duplicate</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_edit_presets">Edit presets</string>
+    <string name="action_get_started">Get started</string>
+    <string name="action_new_alarm">New alarm</string>
+    <string name="action_next">Next</string>
+    <string name="action_ok">OK</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_pause_all">Pause all</string>
+    <string name="action_resume_all">Resume all</string>
+    <string name="action_save">Save</string>
+    <string name="action_save_as_preset">Save as preset</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_test_alert">Test alert</string>
+    <string name="action_undo">Undo</string>
+    <string name="copy_suffix">(copy)</string>
+
+    <!-- Accessibility -->
+    <string name="cd_decrease">Decrease %1$s</string>
+    <string name="cd_increase">Increase %1$s</string>
+    <string name="cd_delete">Delete %1$s</string>
+    <string name="cd_rename">Rename %1$s</string>
+    <string name="cd_hero">Next alert: %1$s, %2$s, at %3$s</string>
+    <string name="cd_more_options">More options</string>
+    <string name="cd_move_step_up">Move step %1$d up</string>
+    <string name="cd_move_step_down" tools:ignore="PluralsCandidate">Move step %1$d down</string>
+    <string name="cd_remove_step">Remove step %1$d</string>
+    <string name="cd_page">Page %1$d of %2$d</string>
+    <string name="cd_restart_timer">Restart %1$s</string>
+    <string name="cd_type_duration">Type a duration</string>
+
+    <!-- Durations and times -->
+    <string name="duration_min">%1$d min</string>
+    <string name="duration_h">%1$d h</string>
+    <string name="duration_h_min">%1$d h %2$d min</string>
+    <string name="duration_d">%1$d d</string>
+    <string name="duration_d_h">%1$d d %2$d h</string>
+    <string name="duration_dialog_title">Enter duration</string>
+    <string name="duration_dialog_range">Between %1$s and %2$s</string>
+    <string name="relative_in">in %1$s</string>
+    <string name="relative_under_minute">in less than a minute</string>
+    <string name="unit_hours">Hours</string>
+    <string name="unit_minutes">Minutes</string>
+
+    <!-- Types, summaries and states -->
+    <string name="type_fixed">Fixed</string>
+    <string name="type_irregular">Irregular</string>
+    <string name="type_stepped">Stepped</string>
+    <string name="type_timer">Timer</string>
+    <string name="summary_fixed">Every %1$s</string>
+    <string name="summary_irregular">%1$d× per %2$s, irregular</string>
+    <string name="summary_irregular_hour">%1$d× per hour, irregular</string>
+    <string name="summary_stepped">Stepped · %1$d of %2$d</string>
+    <string name="summary_timer">Timer · %1$s</string>
+    <string name="next_at">Next %1$s · %2$s</string>
+    <string name="within_window">Next alert within this window</string>
+    <string name="ends_in">Ends in %1$s</string>
+    <string name="alarm_state_off">Off</string>
+    <string name="alarm_state_paused">Paused</string>
+    <string name="alarm_state_finished">Finished</string>
+    <string name="alarm_state_snoozed_until">Snoozed until %1$s</string>
+
+    <!-- Dashboard -->
+    <string name="hero_next_alert">Next alert</string>
+    <string name="hero_none">Nothing scheduled</string>
+    <string name="hero_paused">All alarms paused</string>
+    <string name="hero_label_at">%1$s · at %2$s</string>
+    <string name="section_alarms">Alarms</string>
+    <string name="section_quick_start">Quick start</string>
+    <string name="section_recent_timers">Recent timers</string>
+    <string name="empty_title">No alarms yet</string>
+    <string name="empty_text">Create an interval alarm, an irregular reminder, a stepped schedule or a simple timer.</string>
+    <string name="banner_permissions_title">Alerts may be late or silent</string>
+    <string name="banner_permissions_text">Review permissions to keep every alert on time.</string>
+    <string name="snackbar_deleted">Alarm deleted</string>
+    <string name="snackbar_preset_saved">Preset saved</string>
+
+    <!-- Editor -->
+    <string name="editor_title_new">New alarm</string>
+    <string name="editor_title_edit">Edit alarm</string>
+    <string name="editor_label">Label</string>
+    <string name="editor_type">Type</string>
+    <string name="editor_every">Every</string>
+    <string name="editor_window">Window</string>
+    <string name="editor_alerts_per_window">Alerts</string>
+    <string name="editor_min_gap">Min gap</string>
+    <string name="editor_irregular_hint">Times are random within each window and are never shown, so they can\'t be predicted. You\'ll see “Next alert within this window”.</string>
+    <string name="editor_steps">Steps</string>
+    <string name="editor_add_step">Add step</string>
+    <string name="editor_repeats">Repeats</string>
+    <string name="editor_after_last_step">After the last step</string>
+    <string name="after_stop">Stop</string>
+    <string name="after_continue">Keep last interval</string>
+    <string name="step_summary">%1$d. Every %2$s × %3$d</string>
+    <string name="editor_timer">Timer</string>
+    <string name="timer_countdown">Countdown</string>
+    <string name="timer_at_time">At a time</string>
+    <string name="timer_custom">Custom</string>
+    <string name="timer_fires_at">Fires at</string>
+    <string name="editor_start">Start</string>
+    <string name="start_now">Now</string>
+    <string name="start_at_time">At a time</string>
+    <string name="start_time">Start time</string>
+    <string name="start_time_hint">%1$s today, or tomorrow if it has passed</string>
+    <string name="editor_run_for">Run for</string>
+    <string name="run_for_toggle">Stop automatically</string>
+    <string name="run_for_off">Runs until you turn it off</string>
+    <string name="run_for_summary">Stops after %1$s</string>
+    <string name="editor_alert">Alert</string>
+    <string name="ringtone">Sound</string>
+    <string name="ringtone_default">Default alarm sound</string>
+    <string name="watch_only">Watch only</string>
+    <string name="watch_only_desc">Silence the phone and alert only on your watch while it is connected.</string>
+    <string name="preset_name">Name</string>
+
+    <!-- Alert modes -->
+    <string name="mode_sound_vibration">Sound and vibration</string>
+    <string name="mode_sound_vibration_desc">Your chosen sound with a steady vibration.</string>
+    <string name="mode_sound">Sound only</string>
+    <string name="mode_sound_desc">Your chosen sound, no vibration.</string>
+    <string name="mode_vibrate">Vibrate only</string>
+    <string name="mode_vibrate_desc">A distinctive triple pulse, no sound.</string>
+    <string name="mode_discreet">Discreet (pocket mode)</string>
+    <string name="mode_discreet_desc">Two gentle pulses, a stronger vibration after 30 s, then a softly rising chime after 60 s.</string>
+    <string name="mode_silent">Silent banner</string>
+    <string name="mode_silent_desc">A notification only. No sound or vibration.</string>
+
+    <!-- Validation -->
+    <string name="problem_label_too_long" tools:ignore="PluralsCandidate">Keep the label under %1$d characters.</string>
+    <string name="problem_interval_range">Choose an interval between 1 min and 23 h 59 min.</string>
+    <string name="problem_window_range">Choose a window between 5 min and 23 h 59 min.</string>
+    <string name="problem_alerts_range">Choose 1 to 12 alerts per window.</string>
+    <string name="problem_negative_gap">The minimum gap can\'t be negative.</string>
+    <string name="problem_irregular_impossible" tools:ignore="PluralsCandidate">%1$d alerts at least %2$s apart need a window longer than %4$s, and this window is %3$s. Use fewer alerts, a shorter gap or a longer window.</string>
+    <string name="problem_no_steps">Add at least one step.</string>
+    <string name="problem_too_many_steps" tools:ignore="PluralsCandidate">Use at most %1$d steps.</string>
+    <string name="problem_step_interval">Step %1$d: choose an interval between 1 min and 23 h 59 min.</string>
+    <string name="problem_step_repeats">Step %1$d: choose 1 to 99 repeats.</string>
+    <string name="problem_timer_missing">Choose when the timer should fire.</string>
+    <string name="problem_timer_too_long">Timers can run for up to 7 days.</string>
+    <string name="problem_run_for_short">Run for at least 1 minute.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_alerts">Alerts</string>
+    <string name="settings_default_mode">Default alert mode</string>
+    <string name="settings_snooze">Snooze</string>
+    <string name="settings_ring_timeout">Ring timeout</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_time_format">Time format</string>
+    <string name="time_format_system">System</string>
+    <string name="time_format_12">12-hour</string>
+    <string name="time_format_24">24-hour</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_true_dark">True dark (night)</string>
+    <string name="settings_dynamic_color">Material You colours</string>
+    <string name="settings_dynamic_color_desc">Use colours from your wallpaper</string>
+    <string name="settings_reliability">Reliability</string>
+    <string name="settings_permissions_desc">Check what Roundly needs to alert you on time</string>
+    <string name="settings_presets_desc">Show, hide, rename or delete presets</string>
+    <string name="settings_data">Your data</string>
+    <string name="settings_export">Export</string>
+    <string name="settings_export_desc">Save alarms, presets and settings to a file</string>
+    <string name="settings_import">Import</string>
+    <string name="settings_import_desc">Replace everything with a backup file</string>
+    <string name="settings_privacy_note">Roundly works fully offline. Nothing is collected or shared, and nothing leaves this device unless you export it.</string>
+    <string name="settings_version">Version %1$s</string>
+    <plurals name="export_done">
+        <item quantity="one">Exported %1$d alarm.</item>
+        <item quantity="other">Exported %1$d alarms.</item>
+    </plurals>
+    <plurals name="import_done">
+        <item quantity="one">Imported %1$d alarm and %2$d presets.</item>
+        <item quantity="other">Imported %1$d alarms and %2$d presets.</item>
+    </plurals>
+    <string name="backup_failed">The file could not be read or written.</string>
+    <string name="import_confirm_title">Import a backup?</string>
+    <string name="import_confirm_text">Importing replaces all alarms, custom presets and settings on this device with the contents of the file.</string>
+
+    <!-- Presets -->
+    <string name="presets_title">Presets</string>
+    <string name="presets_built_in">Built-in</string>
+    <string name="presets_custom">Your presets</string>
+    <string name="presets_custom_empty">Save any schedule as a preset from the editor.</string>
+    <string name="preset_shown">Shown on the dashboard</string>
+    <string name="preset_hidden">Hidden</string>
+    <string name="preset_rename">Rename preset</string>
+
+    <!-- Permissions health -->
+    <string name="permissions_title">Permissions health</string>
+    <string name="permissions_intro">Roundly needs a few permissions to alert you on time. Each card opens the right system screen.</string>
+    <string name="perm_state_ok">OK</string>
+    <string name="perm_state_attention">Needs attention</string>
+    <string name="perm_state_optional">Optional</string>
+    <string name="perm_notifications_title">Notifications</string>
+    <string name="perm_notifications_ok">Alerts and missed-alert notices can be shown.</string>
+    <string name="perm_notifications_missing">Alerts can\'t be shown without notifications.</string>
+    <string name="perm_exact_title">Exact alarms</string>
+    <string name="perm_exact_missing">Without exact alarms, alerts can arrive several minutes late.</string>
+    <string name="perm_full_screen_title">Full-screen alerts</string>
+    <string name="perm_full_screen_ok">Alerts can open full screen over the lock screen.</string>
+    <string name="perm_full_screen_missing">Alerts appear as a banner instead of a full-screen alarm over the lock screen.</string>
+    <string name="perm_battery_title">Battery optimisation</string>
+    <string name="perm_battery_ok">Roundly is not restricted.</string>
+    <string name="perm_battery_optional">Optional. If alerts arrive late, set Roundly to Unrestricted. On Samsung, Xiaomi, OnePlus and Huawei phones, also check the battery and app-launch settings for Roundly.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Calm, precise interval alarms</string>
+    <string name="onboarding_1_text">Fixed intervals, irregular reminders, stepped schedules and timers. Everything stays on this device: no account, no internet.</string>
+    <string name="onboarding_2_title">Alerts you can rely on</string>
+    <string name="onboarding_2_text">Roundly uses exact alarms and a full-screen alert, even when your phone is locked. Allow notifications so alerts can appear.</string>
+    <string name="onboarding_3_title">Keep every alert on time</string>
+    <string name="onboarding_3_text">Some phones pause apps to save battery. If an alert is ever late, open Settings, then Permissions health.</string>
+</resources>

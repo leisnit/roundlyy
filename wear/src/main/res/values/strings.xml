@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Roundly</string>
+
+    <string name="channel_alarms_name">Alarms</string>
+    <string name="channel_alarms_description">Interval alerts on your watch.</string>
+
+    <string name="alert_default_label">Alert</string>
+    <string name="alert_step_progress">Step %1$d of %2$d · alert %3$d of %4$d</string>
+    <string name="action_done">Done</string>
+    <string name="action_snooze">Snooze</string>
+    <string name="action_snooze_minutes">Snooze %1$d min</string>
+    <string name="action_pause_all">Pause all</string>
+    <string name="action_resume_all">Resume all</string>
+
+    <string name="no_alarms">Create alarms in Roundly on your phone. They appear here automatically.</string>
+    <string name="alarm_state_off">Off</string>
+    <string name="alarm_state_paused">Paused</string>
+    <string name="alarm_state_finished">Finished</string>
+    <string name="within_window">Within this window</string>
+    <string name="next_at">Next %1$s</string>
+
+    <string name="tile_label">Next alert</string>
+    <string name="tile_next_alert">Next alert</string>
+    <string name="tile_nothing">Nothing scheduled</string>
+    <string name="tile_open_phone">Set up alarms on your phone</string>
+    <string name="tile_in_prefix">"in "</string>
+    <string name="tile_hours_infix">" h "</string>
+    <string name="tile_minutes_suffix">" min"</string>
+    <string name="tile_now">now</string>
+    <string name="tile_countdown_widest">in 23 h 59 min</string>
+
+    <string name="complication_label">Time to next alert</string>
+    <string name="complication_description">Next alert: %1$s</string>
+    <string name="complication_paused">II</string>
+    <string name="complication_window">~</string>
+</resources>

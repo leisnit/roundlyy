@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FF0F1211</color>
+    <!-- Alert window is near-black at night so the screen never flashes white. -->
+    <color name="window_background_alert">#FF050606</color>
+    <color name="accent">#FF7FC4BD</color>
+</resources>

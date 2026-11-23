@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tile picker preview: a calm round card with a ring, a countdown bar and a pill button. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    <path android:fillColor="#FF000000" android:pathData="M96,0a96,96 0,1 0,0.1 0Z" />
+    <path android:fillColor="#FFA9B0AE" android:pathData="M70,52h52a3,3 0,0 1,0 6h-52a3,3 0,0 1,0 -6Z" />
+    <path android:fillColor="#FFDFE4E2" android:pathData="M56,70h80a5,5 0,0 1,0 10h-80a5,5 0,0 1,0 -10Z" />
+    <path android:fillColor="#FF7FC4BD" android:pathData="M48,92h96a8,8 0,0 1,0 16h-96a8,8 0,0 1,0 -16Z" />
+    <path android:fillColor="#FF1B1F1E" android:pathData="M64,128h64a16,16 0,0 1,0 32h-64a16,16 0,0 1,0 -32Z" />
+    <path android:fillColor="#FFDFE4E2" android:pathData="M80,141h32a3,3 0,0 1,0 6h-32a3,3 0,0 1,0 -6Z" />
+</vector>

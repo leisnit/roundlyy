@@ -1,0 +1,10 @@
+# Roundly R8 keep rules.
+# kotlinx.serialization: keep generated serializers for @Serializable classes (export/import JSON, Data Layer).
+-keepattributes *Annotation*, InnerClasses
+-keepclassmembers @kotlinx.serialization.Serializable class app.roundly.** {
+    *** Companion;
+    kotlinx.serialization.KSerializer serializer(...);
+}
+-keepclasseswithmembers class app.roundly.** {
+    kotlinx.serialization.KSerializer serializer(...);
+}

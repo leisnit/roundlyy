@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wear_background">#FF000000</color>
+
+    <style name="Theme.RoundlyWear" parent="android:Theme.DeviceDefault">
+        <item name="android:windowBackground">@color/wear_background</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

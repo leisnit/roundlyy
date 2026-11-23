@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window-level colours only (shown before Compose draws). Compose tokens live in ui/theme/Color.kt. -->
+    <color name="window_background">#FFF7F8F7</color>
+    <color name="window_background_alert">#FFF7F8F7</color>
+    <color name="accent">#FF1F6F6B</color>
+</resources>

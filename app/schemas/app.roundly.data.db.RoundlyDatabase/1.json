@@ -1,0 +1,349 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "43d6b59a335e65f93e5b2a5ccca11b22",
+    "entities": [
+      {
+        "tableName": "alarms",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `label` TEXT NOT NULL, `type` TEXT NOT NULL, `intervalMs` INTEGER, `windowMs` INTEGER, `alertsPerWindow` INTEGER, `minGapMs` INTEGER, `currentWindowStart` INTEGER, `pendingRandomTimes` TEXT, `steps` TEXT, `afterLastStep` TEXT, `stepIndex` INTEGER NOT NULL, `repeatIndex` INTEGER NOT NULL, `stepAnchorAt` INTEGER, `fireAt` INTEGER, `oneOffDurationMs` INTEGER, `startMode` TEXT NOT NULL, `anchorAt` INTEGER NOT NULL, `runForMs` INTEGER, `endsAt` INTEGER, `enabled` INTEGER NOT NULL, `pausedByMaster` INTEGER NOT NULL, `alertMode` TEXT NOT NULL, `watchOnly` INTEGER NOT NULL, `ringtoneUri` TEXT, `snoozeUntil` INTEGER, `snoozedScheduledAt` INTEGER, `nextTriggerAt` INTEGER, `lastFiredAt` INTEGER, `completedAt` INTEGER, `createdAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "intervalMs",
+            "columnName": "intervalMs",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "windowMs",
+            "columnName": "windowMs",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "alertsPerWindow",
+            "columnName": "alertsPerWindow",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "minGapMs",
+            "columnName": "minGapMs",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "currentWindowStart",
+            "columnName": "currentWindowStart",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "pendingRandomTimesJson",
+            "columnName": "pendingRandomTimes",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "stepsJson",
+            "columnName": "steps",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "afterLastStep",
+            "columnName": "afterLastStep",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "stepIndex",
+            "columnName": "stepIndex",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "repeatIndex",
+            "columnName": "repeatIndex",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stepAnchorAt",
+            "columnName": "stepAnchorAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "fireAt",
+            "columnName": "fireAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "oneOffDurationMs",
+            "columnName": "oneOffDurationMs",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "startMode",
+            "columnName": "startMode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "anchorAt",
+            "columnName": "anchorAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "runForMs",
+            "columnName": "runForMs",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "endsAt",
+            "columnName": "endsAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "enabled",
+            "columnName": "enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pausedByMaster",
+            "columnName": "pausedByMaster",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alertMode",
+            "columnName": "alertMode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "watchOnly",
+            "columnName": "watchOnly",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ringtoneUri",
+            "columnName": "ringtoneUri",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "snoozeUntil",
+            "columnName": "snoozeUntil",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "snoozedScheduledAt",
+            "columnName": "snoozedScheduledAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "nextTriggerAt",
+            "columnName": "nextTriggerAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "lastFiredAt",
+            "columnName": "lastFiredAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "completedAt",
+            "columnName": "completedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "presets",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `type` TEXT NOT NULL, `config` TEXT NOT NULL, `builtIn` INTEGER NOT NULL, `hidden` INTEGER NOT NULL, `builtInKey` TEXT, `sortOrder` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "configJson",
+            "columnName": "config",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "builtIn",
+            "columnName": "builtIn",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hidden",
+            "columnName": "hidden",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "builtInKey",
+            "columnName": "builtInKey",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_presets_builtInKey",
+            "unique": true,
+            "columnNames": [
+              "builtInKey"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_presets_builtInKey` ON `${TABLE_NAME}` (`builtInKey`)"
+          }
+        ]
+      },
+      {
+        "tableName": "alert_log",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `alarmId` INTEGER NOT NULL, `occurrenceId` TEXT NOT NULL, `label` TEXT NOT NULL, `scheduledAt` INTEGER NOT NULL, `outcome` TEXT NOT NULL, `respondedAt` INTEGER, `respondedOn` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alarmId",
+            "columnName": "alarmId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "occurrenceId",
+            "columnName": "occurrenceId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scheduledAt",
+            "columnName": "scheduledAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outcome",
+            "columnName": "outcome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "respondedAt",
+            "columnName": "respondedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "respondedOn",
+            "columnName": "respondedOn",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_alert_log_occurrenceId",
+            "unique": true,
+            "columnNames": [
+              "occurrenceId"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_alert_log_occurrenceId` ON `${TABLE_NAME}` (`occurrenceId`)"
+          },
+          {
+            "name": "index_alert_log_alarmId",
+            "unique": false,
+            "columnNames": [
+              "alarmId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alert_log_alarmId` ON `${TABLE_NAME}` (`alarmId`)"
+          },
+          {
+            "name": "index_alert_log_scheduledAt",
+            "unique": false,
+            "columnNames": [
+              "scheduledAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alert_log_scheduledAt` ON `${TABLE_NAME}` (`scheduledAt`)"
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '43d6b59a335e65f93e5b2a5ccca11b22')"
+    ]
+  }
+}
